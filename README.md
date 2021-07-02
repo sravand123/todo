@@ -1,3 +1,4 @@
+```
 Todo is a cli todo app which helps the user managing the day to day tasks
 
 Usage:
@@ -19,3 +20,4 @@ Flags:
   -h, --help              help for todo
 
 Use "todo [command] --help" for more information about a command.
+```
