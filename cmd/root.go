@@ -30,9 +30,9 @@ var dataFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "tri",
+	Use:   "todo",
 	Short: "A command line todo app",
-	Long:  `Tri is a cli todo app which helps the user managing the day to day tasks`,
+	Long:  `Todo is a cli todo app which helps the user managing the day to day tasks`,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
