@@ -27,8 +27,9 @@ import (
 // deleteCmd represents the delete command
 var deleteCmd = &cobra.Command{
 	Use:   "delete",
-	Short: "Delete a Task",
-	Long:  `Delete a Task`,
+	Short: "Deletes a task",
+	Long: `To delete a task run ./todo delete id 
+To delete multiple tasks run ./todo delete id1 id2 id3 ...`,
 	Run: func(cmd *cobra.Command, args []string) {
 		items, _ := task.ReadItems(viper.GetString("datafile"))
 		if allOpt {
@@ -54,5 +55,5 @@ var deleteCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(deleteCmd)
-	deleteCmd.Flags().BoolVar(&allOpt, "all", false, "show all todos")
+	deleteCmd.Flags().BoolVar(&allOpt, "all", false, "show all tasks")
 }

@@ -37,7 +37,7 @@ var tail int
 var listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "Lists all the tasks",
-	Long:  `To list all the taks run ./tri list`,
+	Long:  `To list all the taks run ./todo list`,
 	Run: func(cmd *cobra.Command, args []string) {
 		items, _ := task.ReadItems(viper.GetString("datafile"))
 		if orderBy == "deadline" {

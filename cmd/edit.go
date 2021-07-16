@@ -35,8 +35,8 @@ var Deadline string
 // editCmd represents the edit command
 var editCmd = &cobra.Command{
 	Use:   "edit",
-	Short: "change a task",
-	Long:  `Edit a task`,
+	Short: "changes a task",
+	Long:  `To edit a task run ./todo edit id -t "Task" `,
 	Run: func(cmd *cobra.Command, args []string) {
 		items, _ := task.ReadItems(viper.GetString("datafile"))
 

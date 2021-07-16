@@ -29,7 +29,7 @@ var deadline string
 var addCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Adds a task to your TODO list",
-	Long:  `To add a task run ./tri add your-task `,
+	Long:  `To add a task run ./todo add your-task `,
 	Run:   addRun,
 }
 

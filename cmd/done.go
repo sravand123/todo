@@ -28,8 +28,9 @@ import (
 // doneCmd represents the done command
 var doneCmd = &cobra.Command{
 	Use:   "done",
-	Short: "Set a task completed",
-	Long:  `To set  taks complete , run ./tri done taskNo`,
+	Short: "Sets a task status to completed",
+	Long: `To set a task complete , run ./todo done id 
+To set multiple tasks to done, run ./todo done id1 id2 ...`,
 	Run: func(cmd *cobra.Command, args []string) {
 		for _, arg := range args {
 

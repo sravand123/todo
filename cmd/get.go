@@ -29,8 +29,9 @@ import (
 // getCmd represents the get command
 var getCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Displays tasks with the given ids",
-	Long:  `Displays tasks with the given ids`,
+	Short: "Display a task given id",
+	Long: `To display a taks with an  id run ./todo get ID
+To display multiple tasks run ./todo get id1 id2 id3 ...`,
 	Run: func(cmd *cobra.Command, args []string) {
 		items, _ := task.ReadItems(viper.GetString("datafile"))
 		w := tabwriter.NewWriter(os.Stdout, 3, 0, 2, ' ', 0)
